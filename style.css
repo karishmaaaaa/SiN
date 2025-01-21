@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/mars-landscape-with-desert-surface-mountains_107791-19408.jpg?ga=GA1.1.1202586636.1699251824&semt=ais_incoming');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    /* background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Ffree-backgrounds-photos%2Fspace-game&psig=AOvVaw18CZw75-5aZOlLdrTUJ2Xt&ust=1737532791323000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOizm5ishosDFQAAAAAdAAAAABAE'); */
+}
+.grid {
+	width: 300px;
+	height: 300px;
+	border: solid black 1px;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.grid div {
+	width: 20px;
+	height: 20px;
+}
+
+.invader {
+	background-color: purple;
+	border-radius: 50%;
+    /* padding: 10px; */
+}
+
+.shooter {
+	background-image: url(./cannon.png);
+    background-size: cover;
+    border: 1px solid black;
+    height: 45px;
+    width: 35px;
+}
+
+.laser {
+	background-image: url(./bullet.png);
+    z-index: 3;
+    background-size: contain;
+}
+
+.boom {
+	background-color: red;
+}
+.restart{
+    /* border: 1px solid white; */
+    padding: 15px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
